@@ -49,7 +49,7 @@ const BlogContent = () => {
 
   const fetchSinglePost = async () => {
     const response = await graphcms.request(QUERY, { slug });
-    const data = response.post;
+    const data = await response.post;
     // const post = posts.find((post) => post.slug === slug);
     setPost(data);
     setLoading(false);

@@ -2,9 +2,9 @@ import React from "react";
 
 const BlogCard = ({ title, author, cover, datePublished }, setLoading) => {
   return (
-    <div className="h-[350px] bg-slate-100 flex flex-col justify-center items-center border-4 shadow-xl">
+    <div className="h-[350px]  bg-slate-100 flex flex-col justify-center items-center border-4 shadow-xl">
       <img src={cover.url} alt={title} className="w-full" />
-      <h2 className="font-bold text-lg">{title}</h2>
+      <h2 className="font-semibold text-lg mt-2 text-center">{title}</h2>
       <div className="w-full m-4 flex justify-around items-center">
         <div className="flex gap-2">
           <img
