@@ -67,17 +67,17 @@ const BlogContent = () => {
             <img
               src={post.cover.url}
               alt={post.title}
-              className="w-[900px] h-[500px] mx-auto my-8"
+              className="w-full max-w-[900px]  h-auto mx-auto my-8"
             />
           </div>
-          <div className="w-[900px] mx-auto ">
-            <h2 className="text-4xl text-slate-700 font-bold mb-4 ">
+          <div className="w-full max-w-[900px] mx-auto ">
+            <h2 className="text-3xl md:text-4xl text-slate-700 font-bold mb-4 ">
               {post.title}
             </h2>
             <p className="font-semibold text-slate-800 ">{`Written on ${post.datePublished} by ${post.author.name}`}</p>
           </div>
           <div
-            className="w-[900px] mx-auto text-lg text-justify my-8"
+            className="w-full max-w-[900px] mx-auto text-md md:text-lg text-justify my-8"
             dangerouslySetInnerHTML={{ __html: post.content.html }}
           ></div>
         </>
